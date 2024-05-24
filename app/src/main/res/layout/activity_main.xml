@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="491dp"
+        android:layout_height="797dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.715"
+        app:srcCompat="@drawable/template" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/key_text_input_Edit_text"
+        android:layout_width="82dp"
+        android:layout_height="55dp"
+        android:background="@color/purple_500"
+        android:hint="Key"
+        android:textColor="#090909"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_text_Input_Edit_Text"
+        android:layout_width="328dp"
+        android:layout_height="152dp"
+        android:autoLink="web|phone|map|email"
+        android:background="#DD68F1"
+        android:fontFamily="sans-serif"
+        android:hint="   Enter your Message"
+        android:textAlignment="gravity"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.145" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/output_text_Input_Edit_Text"
+        android:layout_width="332dp"
+        android:layout_height="244dp"
+        android:autoLink="web|phone|map|email"
+        android:background="#DD68F1"
+        android:fontFamily="sans-serif"
+        android:textAlignment="gravity"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.645"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.922" />
+
+    <Button
+        android:id="@+id/create_btn"
+        android:layout_width="167dp"
+        android:layout_height="72dp"
+        android:drawableLeft="@drawable/lock"
+        android:fontFamily="monospace"
+        android:text="CREATE"
+        android:textAlignment="textEnd"
+        android:textStyle="bold"
+        app:backgroundTint="#2E2B2B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.546" />
+
+    <Button
+        android:id="@+id/read_btn"
+        android:layout_width="167dp"
+        android:layout_height="72dp"
+        android:drawableLeft="@drawable/unlock"
+        android:fontFamily="monospace"
+        android:text="READ"
+        android:textAlignment="textEnd"
+        android:textStyle="bold"
+        app:backgroundTint="#2E2B2B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.546" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="54dp"
+        android:layout_height="53dp"
+        app:layout_constraintBottom_toTopOf="@+id/read_btn"
+        app:layout_constraintEnd_toStartOf="@+id/key_text_input_Edit_text"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_text_Input_Edit_Text"
+        app:layout_constraintVertical_bias="0.695"
+        app:srcCompat="@drawable/key" />
+
+    <ImageView
+        android:id="@+id/support_imageview"
+        android:layout_width="42dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/input_text_Input_Edit_Text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307"
+        app:srcCompat="@drawable/support" />
+
+    <ImageView
+        android:id="@+id/edit_imageView"
+        android:layout_width="28dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/input_text_Input_Edit_Text"
+        app:layout_constraintEnd_toEndOf="@+id/input_text_Input_Edit_Text"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toStartOf="@+id/input_text_Input_Edit_Text"
+        app:layout_constraintTop_toTopOf="@+id/input_text_Input_Edit_Text"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/edit" />
+
+    <ImageView
+        android:id="@+id/generate_imageView"
+        android:layout_width="28dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/output_text_Input_Edit_Text"
+        app:layout_constraintEnd_toEndOf="@+id/output_text_Input_Edit_Text"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="@+id/output_text_Input_Edit_Text"
+        app:layout_constraintTop_toTopOf="@+id/output_text_Input_Edit_Text"
+        app:layout_constraintVertical_bias="0.062"
+        app:srcCompat="@drawable/generate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
